@@ -1,73 +1,155 @@
-# React + TypeScript + Vite
+# Nhat Tan Vu - Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website showcasing my backend engineering work, projects, and technical experience.
 
-Currently, two official plugins are available:
+🌐 Live site: [https://nhattanvu.github.io](https://nhattanvu.github.io)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+# About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This repository contains the source code for my personal developer portfolio. The site highlights my backend development experience, data pipeline work, and selected software projects including AI‑powered applications and full‑stack systems.
 
-## Expanding the ESLint configuration
+The goal of this portfolio is to provide recruiters and collaborators with a quick overview of:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* My technical background
+* Projects I have built
+* Technologies I work with
+* Ways to contact me
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+The portfolio is built with a modern frontend stack:
+
+* React
+* Vite
+* Tailwind CSS 4
+* TypeScript
+* GitHub Pages (deployment)
+
+This setup provides fast development, small production bundles, and easy automated deployment.
+
+---
+
+# Featured Projects
+
+## MyAlbum
+
+Photo sharing platform with album management and AI-assisted image features.
+
+Tech:
+.NET Core, React, Angular, Azure, Docker
+
+Repo:
+[https://github.com/NhatTanVu/myalbum](https://github.com/NhatTanVu/myalbum)
+
+---
+
+## MyMealAgent
+
+AI-powered cooking assistant that transforms online recipes into a guided mobile cooking experience.
+
+Tech:
+React Native, FastAPI, OpenAI API, Azure
+
+Repo:
+[https://github.com/NhatTanVu/MyMealAgent](https://github.com/NhatTanVu/MyMealAgent)
+
+---
+
+## Soccer Logic
+
+Football match website with team pages, standings, and match information.
+
+Tech:
+React, Redux, Next.js
+
+Repo:
+[https://github.com/NhatTanVu/soccer-logic](https://github.com/NhatTanVu/soccer-logic)
+
+---
+
+## ProBuddy
+
+Mobile app connecting people for fun and professional opportunities.
+
+Tech:
+Flutter, Django REST, MySQL
+
+Repo:
+[https://github.com/NhatTanVu/ProBuddy](https://github.com/NhatTanVu/ProBuddy)
+
+---
+
+# Local Development
+
+Clone the repository:
+
+```
+git clone https://github.com/NhatTanVu/NhatTanVu.github.io.git
+cd NhatTanVu.github.io
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+npm install
+```
+
+Run the development server:
+
+```
+npm run dev
+```
+
+Open the local site:
+
+```
+http://localhost:5173
+```
+
+---
+
+# Build for Production
+
+```
+npm run build
+```
+
+The optimized site will be generated in:
+
+```
+dist/
+```
+
+---
+
+# Deployment
+
+The site is automatically deployed to **GitHub Pages** using **GitHub Actions**.
+
+Every push to the `main` branch triggers the deployment workflow.
+
+Live site:
+
+[https://nhattanvu.github.io](https://nhattanvu.github.io)
+
+---
+
+# Contact
+
+If you would like to collaborate or discuss opportunities:
+
+Email: [onchua2006@gmail.com](mailto:onchua2006@gmail.com)
+
+LinkedIn:
+[https://www.linkedin.com/in/tanvu](https://www.linkedin.com/in/tanvu)
+
+GitHub:
+[https://github.com/NhatTanVu](https://github.com/NhatTanVu)
+
+---
+
+⭐ If you find my work interesting, feel free to connect with me on LinkedIn.
