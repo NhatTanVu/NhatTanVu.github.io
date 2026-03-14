@@ -18,7 +18,7 @@ function useInView(threshold = 0.15) {
   return { ref, visible };
 }
 
-function Section({ id, children, className = "" }: { id?: string; children: React.ReactNode; className?: string }) {
+function Section({ id, children, className = "" }: { id?: string; children: React.ReactNode; className?: string, style?: React.CSSProperties }) {
   const { ref, visible } = useInView();
   return (
     <section
@@ -39,15 +39,6 @@ const badgeColors: Record<string, string> = {
   Mobile:      "border-emerald-400/30 bg-emerald-400/10 text-emerald-300",
   Marketplace: "border-rose-400/30   bg-rose-400/10   text-rose-300",
   ML:          "border-fuchsia-400/30 bg-fuchsia-400/10 text-fuchsia-300",
-};
-
-const badgeGlow: Record<string, string> = {
-  Featured:    "hover:border-amber-400/40  hover:shadow-amber-500/10",
-  "AI App":    "hover:border-violet-400/40 hover:shadow-violet-500/10",
-  Frontend:    "hover:border-sky-400/40    hover:shadow-sky-500/10",
-  Mobile:      "hover:border-emerald-400/40 hover:shadow-emerald-500/10",
-  Marketplace: "hover:border-rose-400/40   hover:shadow-rose-500/10",
-  ML:          "hover:border-fuchsia-400/40 hover:shadow-fuchsia-500/10",
 };
 
 /* ── Data ── */
