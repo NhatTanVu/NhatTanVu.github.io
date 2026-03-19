@@ -165,6 +165,7 @@ export default function App() {
           --email-btn-color:#0f172a;
 
           --card-shadow: rgba(0,0,0,0.40);
+          --ring-pulse-color: rgba(248,250,252,0.4);
         }
 
         /* ══ LIGHT ══ */
@@ -209,6 +210,7 @@ export default function App() {
           --email-btn-color:#f8fafc;
 
           --card-shadow: rgba(0,0,0,0.08);
+          --ring-pulse-color: rgba(15,23,42,0.25);
         }
 
         html { scroll-behavior: smooth; }
@@ -252,9 +254,9 @@ export default function App() {
         .timeline-dot { animation: pulse-dot 2.5s ease-in-out infinite; }
 
         @keyframes ring-pulse {
-          0%   { box-shadow: 0 0 0 0 rgba(0,0,0,0.2); }
-          70%  { box-shadow: 0 0 0 10px rgba(0,0,0,0); }
-          100% { box-shadow: 0 0 0 0 rgba(0,0,0,0); }
+          0%   { box-shadow: 0 0 0 0 var(--ring-pulse-color); }
+          70%  { box-shadow: 0 0 0 10px transparent; }
+          100% { box-shadow: 0 0 0 0 transparent; }
         }
         .email-btn:hover { animation: ring-pulse 1s ease-out; }
 
@@ -440,7 +442,7 @@ export default function App() {
               ].map(card => (
                 <div key={card.title} style={{ borderRadius: 24, border: "1px solid var(--border)", background: "var(--surface)", padding: 24 }}>
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: 15, fontWeight: 700, color: "var(--text-primary)", marginBottom: 16 }}>{card.title}</h3>
-                  <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 12 }}>
+                  <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 12, textAlign: "left" }}>
                     {card.items.map(item => (
                       <li key={item} style={{ display: "flex", gap: 10, fontSize: 13, lineHeight: 1.7, color: "var(--text-secondary)" }}>
                         <span style={{ color: "var(--sky)", marginTop: 3, flexShrink: 0 }}>›</span>
@@ -511,7 +513,7 @@ export default function App() {
                     <div className="timeline-dot" style={{ width: 12, height: 12, borderRadius: "50%", background: "linear-gradient(135deg, var(--sky), var(--violet))", flexShrink: 0, marginTop: 6 }} />
                     {i < experience.length - 1 && <div style={{ width: 2, flexGrow: 1, background: "linear-gradient(to bottom, rgba(56,189,248,0.4), rgba(56,189,248,0.05))", margin: "8px 0" }} />}
                   </div>
-                  <div style={{ borderRadius: 24, border: "1px solid var(--border)", background: "var(--surface)", padding: 24, marginBottom: i < experience.length - 1 ? 20 : 0, flexGrow: 1 }}>
+                  <div style={{ textAlign: "left", borderRadius: 24, border: "1px solid var(--border)", background: "var(--surface)", padding: 24, marginBottom: i < experience.length - 1 ? 20 : 0, flexGrow: 1 }}>
                     <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: 10, marginBottom: 12 }}>
                       <div>
                         <h3 style={{ fontFamily: "var(--font-display)", fontSize: 15, fontWeight: 700, color: "var(--text-primary)" }}>{item.title}</h3>
