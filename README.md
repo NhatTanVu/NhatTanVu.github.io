@@ -2,7 +2,8 @@
 
 Personal portfolio website showcasing my backend engineering work, projects, and technical experience.
 
-🌐 Live site: [https://nhattanvu.github.io](https://nhattanvu.github.io)
+* 🌐 Live site: [https://nhattanvu.github.io](https://nhattanvu.github.io)
+* 🚦 Status: [![Deploy portfolio to GitHub Pages](https://github.com/NhatTanVu/NhatTanVu.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/NhatTanVu/NhatTanVu.github.io/actions/workflows/deploy.yml)
 
 ---
 
