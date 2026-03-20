@@ -69,7 +69,7 @@ const projects = [
   { title: "Soccer Logic", badge: "Frontend", description: "A live football website experience with match information, standings, team pages, and player views inspired by modern sports products.", stack: ["React", "Redux", "Next.js", "Vercel"], href: "https://github.com/NhatTanVu/soccer-logic" },
   { title: "ProBuddy", badge: "Mobile", description: "A cross-platform networking app for connecting people around fun and professional opportunities, backed by a Django REST API.", stack: ["Flutter", "Django REST", "MySQL", "JWT"], href: "https://github.com/NhatTanVu/ProBuddy" },
   { title: "DispoSell", badge: "Marketplace", description: "A web platform focused on collecting, refurbishing, and reselling usable furniture with a practical cloud-backed architecture.", stack: ["Java", "Spring", "AWS"], href: "https://github.com/NhatTanVu/DispoSell" },
-  { title: "Object Detection ML.NET", badge: "ML", description: "A computer vision experiment using ML.NET and Tiny YOLOv2, reflecting my interest in practical AI and machine learning features.", stack: ["ML.NET", "ONNX", "Computer Vision"], href: "https://github.com/NhatTanVu/Object-Detection-ML.NET" },
+  { title: "AI-ML", badge: "ML", description: "Machine learning Jupyter notebooks for University of Texas at Austin PGP-AIML program.", stack: ["machine-learning", "tensorflow", "keras", "artificial-intelligence", "jupyter-notebooks"], href: "https://github.com/NhatTanVu/AI-ML" },
 ];
 
 const skills = [

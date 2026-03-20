@@ -83,6 +83,30 @@ Repo:
 
 ---
 
+## DispoSell
+
+A web platform focused on collecting, refurbishing, and reselling usable furniture with a practical cloud-backed architecture.
+
+Tech:
+Java, Spring, AWS
+
+Repo:
+[https://github.com/NhatTanVu/DispoSell](https://github.com/NhatTanVu/DispoSell)
+
+---
+
+## AI-ML
+
+Machine learning Jupyter notebooks for University of Texas at Austin PGP-AIML program.
+
+Tech:
+machine-learning, tensorflow, keras, artificial-intelligence, jupyter-notebooks
+
+Repo:
+[https://github.com/NhatTanVu/AI-ML](https://github.com/NhatTanVu/AI-ML)
+
+---
+
 # Local Development
 
 Clone the repository:
